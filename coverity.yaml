@@ -1,0 +1,13 @@
+capture:
+  build:
+    build-command: ./mvnw clean install -Dmaven.test.skip
+  security-da: false
+analyze:
+  aggressiveness-level: medium
+  checkers:
+    all: true
+    audit: true
+    webapp-security:
+      enabled: true
+      aggressiveness-level: medium
+  constraint-fpp: true
